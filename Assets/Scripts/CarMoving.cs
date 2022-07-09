@@ -18,7 +18,7 @@ public class CarMoving : MonoBehaviour
 
         transform.Rotate(0f, steerValue * turnSpeed * Time.deltaTime, 0f);
 
-        transform.Translate(Vector3.forward * 10 * Time.deltaTime);
+        transform.Translate(Vector3.forward * speed * Time.deltaTime);
     }
 
     private void OnTriggerEnter(Collider other)
